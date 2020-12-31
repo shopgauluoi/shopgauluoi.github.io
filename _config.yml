@@ -1,0 +1,50 @@
+# Site settings
+title: Shop G&#7845;u L&#432;&#7901;i
+email: ngocdiep.153@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Australian made products
+
+baseurl: "" # the subpath of your site, e.g. /blog
+
+built-by: Cuong Nguyen
+
+copyright:
+   name: Gau-luoi
+   link: '/'
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+paginate: 6
+paginate_path: /page:num/
+
+# Tracker
+analytics: UA-186317670-1
+
+# Comments
+disqus: yes
+disqus-shortname: cnguyen10
+
+# #social
+# facebook: http://facebook.com/
+# quora: http://quora.com/
+# twitter: http://twitter.com/
+# github: http://github.com/
+
+# #facebook like box
+# fb-like-box: yes
+# fb-app-id: 
+# fb-page-url: https://www.facebook.com/
+
+# Sass style
+sass:
+  style: compressed
+
+# Ruby Gems
+plugins: 
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+collections:
+  products:
+    output: true
