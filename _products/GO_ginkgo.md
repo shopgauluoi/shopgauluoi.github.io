@@ -1,9 +1,9 @@
 ---
 layout: post
 identifier: "2489409"
-name: "GO Health Ginkgo"
+name: "GO Healthy Ginkgo 9000+ 60 Vege Capsules"
 image: "https://static.chemistwarehouse.com.au/ams/media/pi/85992/2DF_200.jpg"
-price: "17"
+price: "300"
 ---
 
 GO Healthy GO Ginkgo 9,000 1-A-Day Vegecapsules support memory and mental alertness and help maintain circulation to the legs, hands and feet.

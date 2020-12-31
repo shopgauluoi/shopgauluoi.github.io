@@ -1,9 +1,9 @@
 ---
 layout: post
 identifier: "2489408"
-name: "Healthy Care Royal Jelly"
+name: "Healthy Care Royal Jelly 1000 365 Capsules"
 image: "https://static.chemistwarehouse.com.au/ams/media/pi/56237/2DF_200.jpg"
-price: "28"
+price: "600"
 ---
 
 Healthy Care Royal Jelly maintain general wellbeing.

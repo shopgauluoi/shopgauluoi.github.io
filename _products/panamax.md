@@ -2,7 +2,7 @@
 layout: post
 identifier: "2489407"
 name: "Panamax 500mg 100 Tablets"
-price: "0.69"
+price: "20"
 image: "https://static.chemistwarehouse.com.au/ams/media/pi/41147/F2D_200.jpg"
 ---
 For the temporary relief of pain and discomfort in arthritis, headache, muscular and neuralgic conditions. Reduces fever.
