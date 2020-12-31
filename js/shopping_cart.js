@@ -80,11 +80,11 @@ function renderCart(items) {
                     <button type="button" class="btn btn-block btn-sm btn-outline-primary"
                         onClick="cartLS.quantity(${item.id},-1)">-</button>
                 </td>
-                <td class="text-right">$${item.price}</td>
+                <td class="text-right">${item.price}k &#8363;</td>
                 <td class="text-right"><Button class="btn btn-warning" onClick="cartLS.remove(${item.id})">Delete</Button></td>
             </tr>`).join("")
 
-    $total.innerHTML = "$" + cartLS.total()
+    $total.innerHTML = cartLS.total() + "k &#8363;";
 }
 
 function checkoutOrder(){

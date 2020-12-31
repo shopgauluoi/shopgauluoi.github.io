@@ -5,7 +5,8 @@ layout: default
 <div class="home py-4 py-md-5">
   <div class="row">
     {% for product in site.products %}
-      <div class="col-12 col-md-6 col-lg-4">
+      <!-- <div class="col-12 col-md-6 col-lg-4"> -->
+      <div class="col-12 col-md-4 col-lg-3">
        <a href="{{ product.url | prepend: site.baseurl }}" class="index-anchor">
         <div class="card rounded overflow-hidden">  
           <div class="image">
@@ -15,7 +16,7 @@ layout: default
             <div class="card-body">
               <h3 class="panel-title font-weight-bold">{{ product.name | truncate: 25 }}</h3>
               <!-- <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span></p> -->
-              <h4 class="p-0 my-1 mx-0"><span style="color: #B12704!important;">${{ product.price }}</span></h4>
+              <h4 class="p-0 my-1 mx-0"><span style="color: #B12704!important;">{{ product.price }}k &#8363;</span></h4>
               <p>{{ product.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
             </div>
           </div>
@@ -27,7 +28,7 @@ layout: default
 </div> 
     
   <div class="row justify-content-center">
-    <div class="col-md-4">
+    <div class="col-md-3">
         {% if paginator.total_pages > 1 %}
         <ul class="pagination">
           {% if paginator.previous_page %}
