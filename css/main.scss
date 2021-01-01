@@ -41,3 +41,9 @@ $on-laptop: 800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "layout", "custom", "syntax-highlighting";
+
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
