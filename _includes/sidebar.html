@@ -12,13 +12,13 @@
 
   <div class="mt10 recent">
     <ul>
-      <li><h4>Price: <span style="color: #B12704!important;">{{page.price}}k &#8363;</span></h4></li>
+      <li><h5>Gi&aacute;: <span style="color: #B12704!important;">{{page.price}}k &#8363;</span></h5></li>
       <li>
-        <label for="quantity">Quantity:</label>
+        <label for="quantity">S&#7889; l&#432;&#7907;ng: </label>
         <input type="number" id="product-{{page.identifier}}-quantity" name="quantity" value="1" min="1" max="100" style="text-align: right;">
       </li>
       <li>
-        <button type="button" class="btn btn-block btn-outline-primary" onClick="add2cart({{page.identifier}}, '{{page.name}}', {{page.price}})">Add to Cart</button>
+        <button type="button" class="btn btn-block btn-outline-primary" onClick="add2cart({{page.identifier}}, '{{page.name}}', {{page.price}})">Thêm vào giỏ hàng</button>
       </li>
     </ul>
   </div>

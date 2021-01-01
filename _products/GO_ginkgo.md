@@ -17,20 +17,20 @@ GO Ginkgo 9,000 1-A-Day supports healthy brain function, memory and cognitive pe
 
 Size: 60 Pack
 
-### Warnings
+##### Warnings
 Cautions: Always read the label. Take only as directed. If symptoms persist, consult your Healthcare Professional. Do not use if tamper evidence seal is missing, torn or broken.
 
-#### IMPORTANT INFORMATION
+###### IMPORTANT INFORMATION
 Medicine Interactions: If taking prescription medication or if in doubt, consult your Healthcare Professional.
 
 Contains no added: wheat, corn, gluten, yeast, dairy products, egg, soy, artificial flavours, colours, preservatives or sweeteners.
 
-### Ingredients
+##### Ingredients
 Each VegeCapsule contains:
 - Ginkgo biloba (Ginkgo) ext. equiv. to dr leaf: 9g (9,000mg).
 
-### Directions
+##### Directions
 Adults: Take 1 VegeCapsule daily. Best taken with food or as directed by your Healthcare Professional. Take in conjunction with a healthy balanced diet.
 
-#### STORAGE INSTRUCTIONS
+##### STORAGE INSTRUCTIONS
 Store below 30&#8451; away from children.

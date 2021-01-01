@@ -69,9 +69,8 @@ function renderCart(items) {
 
     $cart.innerHTML = items.map((item) => `
             <tr>
-                <td>${item.id}</td>
                 <td>${item.name}</td>
-                <td>${item.quantity}</td>
+                <td class="text-right">${item.quantity}</td>
                 <td style="width: 60px;">	
                     <button type="button" class="btn btn-block btn-sm btn-outline-primary"
                         onClick="cartLS.quantity(${item.id},1)">+</button>
@@ -80,11 +79,11 @@ function renderCart(items) {
                     <button type="button" class="btn btn-block btn-sm btn-outline-primary"
                         onClick="cartLS.quantity(${item.id},-1)">-</button>
                 </td>
-                <td class="text-right">${item.price}k &#8363;</td>
+                <td class="text-right">${item.price}k&#8363;</td>
                 <td class="text-right"><Button class="btn btn-warning" onClick="cartLS.remove(${item.id})">Delete</Button></td>
             </tr>`).join("")
 
-    $total.innerHTML = cartLS.total() + "k &#8363;";
+    $total.innerHTML = cartLS.total() + "k&#8363;";
 }
 
 function checkoutOrder(){
@@ -102,7 +101,7 @@ function checkoutOrder(){
 
 function placeOrder(){
     var customer_div = document.getElementById('customer-info');
-    var customer_inputs = document.querySelectorAll('#customer-info input');
+    var customer_inputs = document.querySelectorAll('#customer-info input, textarea');
     var alert_msg = document.getElementById("alert-msg");
     var validFlag = true;
     var customer_info = {};
