@@ -76,12 +76,12 @@ permalink: /shopping-cart/
                                     <input type="text" name="customer_address"/>
                                 </label>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <label style="display: block;">
                                     <span style="display: inline-block; text-align: right; width: 100px;">Email</span>
                                     <input type="email" name="customer_email" placeholder="Không bắt buộc"/>
                                 </label>
-                            </li>
+                            </li> -->
                             <li>
                                 <label style="display: block;">
                                     <span style="display: inline-block; text-align: right; width: 100px; vertical-align: top;">Lời nh&#7855;n</span>
@@ -104,7 +104,7 @@ permalink: /shopping-cart/
             <input name="customer_order_id" type="text">
             <input name="customer_name" type="text">
             <input name="customer_phone" type="text">
-            <input name="customer_email" type="text">
+            <!-- <input name="customer_email" type="text"> -->
             <input name="customer_address" type="text">
             <input name="customer_comment" type="text">
             <input name="id" type="text">
