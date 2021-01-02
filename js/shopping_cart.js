@@ -8,6 +8,13 @@ $(document).ready(function(){
     }
 });
 
+window.addEventListener('popstate', function (e) {
+    var state = e.state;
+    if (state !== null) {
+        updateCartNotification();
+    }
+});
+
 cartLS.onChange(updateCart);
 
 function updateCart(){
