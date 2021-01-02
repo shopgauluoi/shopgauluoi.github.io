@@ -55,7 +55,7 @@ permalink: /shopping-cart/
                             <li>
                                 <label style="display: block;">
                                     <span style="display: inline-block; text-align: right; width: 100px;">M&#227; &#273;&#7863;t h&#224;ng</span>
-                                    <input type="text" name="customer_order_id" id="input-order-id" required disabled/>
+                                    <input type="text" name="customer_order_id" id="input-order-id" required readonly/>
                                 </label>
                             </li>
                             <li>

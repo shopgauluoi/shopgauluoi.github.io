@@ -3,21 +3,21 @@ layout: default
 ---
 
 <div class="home py-4 py-md-5">
-  <div class="row">
+  <div class="row" id="grid">
     {% for product in site.products %}
-      <div class="col-6 col-md-3 col-lg-2">
+      <div class="col-6 col-md-3 col-lg-2 product-item">
        <a href="{{ product.url | prepend: site.baseurl }}" class="index-anchor">
-        <div class="card rounded overflow-hidden">  
+        <div class="card rounded-0">  
           <div class="image">
             {% if product.image %}
-            <img src="{{product.image | relative_url}}" alt="{{product.name}}" style="max-width: 150px; height: auto; display: block; margin-left: auto; margin-right: auto;">
+            <img class="card-img-top" src="{{product.image | relative_url}}" alt="{{product.name}}" style="max-width: 150px; height: auto; display: block; margin-left: auto; margin-right: auto;">
             {% endif %}
-            <div class="card-body">
+            <div class="card-body bg-light">
               <!-- <h5 class="panel-title font-weight-bold">{{ product.name | truncate: 25 }}</h5> -->
-              <h5 class="card-title panel-title">{{ product.name }}</h5>
+              <h5 class="card-title panel-title" style="min-height: 75px;">{{ product.name | truncate: 30 }}</h5>
               <!-- <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span></p> -->
               <!-- <p class="p-0 my-1 mx-0">Gi&aacute;: <span style="color: #B12704!important;">{{ product.price }}k &#8363;</span></p> -->
-              <p>Gi&aacute;: <span style="color: #B12704!important;">{{ product.price }}k &#8363;</span></p>
+              <p><span style="color: #B12704!important;">{{ product.price }}k &#8363;</span></p>
               <!-- <p>{{ product.excerpt | strip_html | strip_newlines | truncate: 150 }}</p> -->
             </div>
           </div>

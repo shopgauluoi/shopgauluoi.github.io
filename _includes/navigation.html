@@ -1,6 +1,9 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-  <a class="navbar-brand" href={{"/" | relative_url}} style="text-decoration: none; font-weight: normal;">G&#7845;u L&#432;&#7901;i</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <!-- <a class="navbar-brand" href={{"/" | relative_url}} style="text-decoration: none; font-weight: normal;">G&#7845;u L&#432;&#7901;i</a> -->
   <a class="navbar-link" href={{"/shopping-cart/" | relative_url}}><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>&#160;<span class="badge badge-danger" id="badge-total-items"></span></a>
+  <form class="form-inline" style="padding-left: 10px;">
+    <input class="form-control mr-sm-2" id="input-search" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search" onkeyup="filterFunction()" />
+  </form>
   <button
     class="navbar-toggler"
     type="button"
@@ -15,8 +18,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
+      <!-- <li class="nav-item">
+        <input class="form-control" id="input-search" type="search" placeholder="Tìm kiếm sản phẩm" onkeyup="filterFunction()" />
+      </li> -->
       <li class="nav-item">
-        <a class="nav-link" href={{"/about/" | relative_url}} >About</a>
+        <a class="nav-link" href={{"/" | relative_url}} >Trang chủ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href={{"/about/" | relative_url}} >Giới thiệu</a>
       </li>
     </ul>
   </div>

@@ -10,15 +10,18 @@
     {% endif %}
   </div>
 
-  <div class="mt10 recent">
+  <div class="mt10 recent bg-light">
     <ul>
       <li><h5>Gi&aacute;: <span style="color: #B12704!important;">{{page.price}}k &#8363;</span></h5></li>
       <li>
-        <label for="quantity">S&#7889; l&#432;&#7907;ng: </label>
-        <input type="number" id="product-{{page.identifier}}-quantity" name="quantity" value="1" min="1" max="100" style="text-align: right;">
-      </li>
+        <div class="form-group row">
+          <label for="quantity" class="col-sm-4 col-form-label">S&#7889; l&#432;&#7907;ng: </label>
+          <div class="col-sm-4">
+            <input class="form-control" type="number" id="product-{{page.identifier}}-quantity" name="quantity" value="1" min="1" max="100" style="text-align: right;">
+          </div>
+        </div>
       <li>
-        <button type="button" class="btn btn-block btn-outline-primary" onClick="add2cart({{page.identifier}}, '{{page.name}}', {{page.price}})">Thêm vào giỏ hàng</button>
+        <button type="button" class="btn btn-block btn-primary" onClick="add2cart({{page.identifier}}, '{{page.name}}', {{page.price}})">Thêm vào giỏ hàng</button>
       </li>
     </ul>
   </div>
