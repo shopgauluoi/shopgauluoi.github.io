@@ -23,7 +23,8 @@ analytics: UA-186317670-1
 
 # Comments
 disqus: yes
-disqus-shortname: cnguyen10
+# disqus-shortname: cnguyen10
+disqus-shortname: gau-luoi
 
 # #social
 # facebook: http://facebook.com/
