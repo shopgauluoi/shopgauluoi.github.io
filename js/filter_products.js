@@ -5,7 +5,7 @@ function filterFunction() {
   cardContainer = document.getElementById("grid");
   cards = cardContainer.getElementsByClassName("product-item");
   for (i = 0; i < cards.length; i++) {
-      title = cards[i].querySelector(".card-title");
+      title = cards[i].querySelector(".card-product-name");
       if (title.innerText.toUpperCase().indexOf(filter) > -1) {
           cards[i].style.display = "";
       } else {
