@@ -14,10 +14,10 @@ layout: default
             {% endif %}
             <div class="card-body">
               <!-- <h5 class="panel-title font-weight-bold">{{ product.name | truncate: 25 }}</h5> -->
-              <h5 class="card-title panel-title" style="height: 4em;">{{ product.name | truncate: 25 }}</h5>
+              <h6 class="card-title panel-title" style="height: 4.5em;">{{ product.name | truncate: 50 }}</h6>
               <!-- <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span></p> -->
               <!-- <p class="p-0 my-1 mx-0">Gi&aacute;: <span style="color: #B12704!important;">{{ product.price }}k &#8363;</span></p> -->
-              <p><span style="color: #B12704!important;">{{ product.price }}k &#8363;</span></p>
+              <div><span class="product-price">{{ product.price }}k &#8363;</span></div>
               <!-- <p>{{ product.excerpt | strip_html | strip_newlines | truncate: 150 }}</p> -->
             </div>
           </div>
