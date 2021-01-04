@@ -4,7 +4,7 @@
     <ul class="navbar-nav ml-auto">
       {% if page.url == "/" %}
       <li class="nav-item">
-        <input class="navbar-link form-control" style="max-width: 12em;" id="input-search" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search" onkeyup="filterFunction()" />
+        <input class="navbar-link form-control" style="max-width: 12em;" id="input-search" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search" onkeyup="filterFunction()" onsearch="filterFunction()"/>
       </li>
       {% endif %}
       <li class="nav-item">

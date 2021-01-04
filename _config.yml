@@ -1,12 +1,10 @@
 # Site settings
-title: Gấu Lười &#124; Sống khỏe kiểu Úc
+title: Gấu Lười
 email: ngocdiep.1532@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Gấu Lười là hệ thống trực tuyến đặt hàng và sản phẩm liên quan đến sức khỏe nhập khẩu từ Úc.
+  Hệ thống đặt hàng nhập khẩu từ Úc.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-
-built-by: Cuong Nguyen
 
 copyright:
    name: G&#7845;u L&#432;&#7901;i
@@ -23,7 +21,6 @@ analytics: UA-186317670-1
 
 # Comments
 disqus: yes
-# disqus-shortname: cnguyen10
 disqus-shortname: gau-luoi
 
 # #social
@@ -46,6 +43,23 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 
+collections_dir: products
 collections:
-  products:
+  bio_island:
+    output: true
+  blackmores:
+    output: true
+  caruso:
+    output: true
+  go_healthy:
+    output: true
+  healthy_care:
+    output: true
+  milk:
+    output: true
+  natures_way:
+    output: true
+  wagner:
+    output: true
+  others:
     output: true
