@@ -29,6 +29,15 @@ layout: compress
     <script type="text/javascript" src="{{ "/js/shopping_cart.js?v=" | append: site.github.build_revision | relative_url }}"></script>
 
     <script type="text/javascript" src="/js/filter_products.js"></script>
+
+    <!-- format price -->
+    <script type="text/javascript">
+      var priceElements = document.getElementsByClassName('product-price');
+      for (var i = 0; i < priceElements.length; i++) {
+        parsedPrice = new Intl.NumberFormat('vi-VI').format(parseInt(priceElements[i].innerHTML));
+        priceElements[i].innerHTML = parsedPrice + "k &#8363;"
+      }
+    </script>
     
     {% if site.analytics %}{% include analytics.html %}{% endif %}
   </body>

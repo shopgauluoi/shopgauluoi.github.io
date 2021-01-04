@@ -78,11 +78,11 @@ function renderCart(items) {
             <tr>
                 <td>${item.name}</td>
                 <td class="text-center">${item.quantity}</td>
-                <td class="text-right">${item.price}k&#8363;</td>
+                <td class="text-right product-price">${new Intl.NumberFormat('vi-VI').format(item.price)}k &#8363;</td>
                 <td class="text-right"><Button class="btn" onClick="cartLS.remove(${item.id})"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></Button></td>
             </tr>`).join("")
 
-    $total.innerHTML = cartLS.total() + "k&#8363;";
+    $total.innerHTML = new Intl.NumberFormat('vi-VI').format(cartLS.total()) + "k &#8363;";
 }
 
 function checkoutOrder(){
