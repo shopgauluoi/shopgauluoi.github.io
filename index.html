@@ -18,7 +18,7 @@ layout: default
               {% endif %}
               <div class="card-body">
                 <div class="card-product-name" hidden>{{ product.name }}</div>
-                <h6 class="card-title panel-title" style="height: 4.5em; margin-bottom: 0.5em;">{{ product.name | truncate: 40 }}</h6>
+                <h6 class="card-title panel-title" style="height: 4.5em; margin-bottom: 0.5em;">{{ product.name | truncate: 30 }}</h6>
                 <div><span class="product-price">{{ product.price }}</span></div>
                 <!-- <p>{{ product.excerpt | strip_html | strip_newlines | truncate: 150 }}</p> -->
               </div>
