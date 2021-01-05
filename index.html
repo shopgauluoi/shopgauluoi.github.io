@@ -1,35 +1,35 @@
 ---
 layout: default
 ---
-{% assign num_collections = site.collections | size %}
-{% assign shuffled_collections = site.collections | sample: num_collections %}
 
-<div class="home py-4 py-md-5">
-{% for collection in shuffled_collections %}
+<div class="home py-4 py-md-5" id="home-page">
+{% for collection in site.collections %}
   {% if collection.label != "posts" %}
-  <h4 class="panel-title product-brand">{{ collection.label | upcase | replace: "_", " " }}</h4>
-  <div class="row">
-    {% for product in collection.docs %}
-    <div class="col-6 col-md-3 col-lg-2 product-item">
-      <a href="{{ product.url | prepend: site.baseurl }}" class="index-anchor">
-        <div class="card">  
-          <div class="image">
-            {% if product.image %}
-            <img class="card-img-top lazyload" data-src="{{product.image | relative_url}}" alt="{{product.name}}" loading=“lazy” style="max-width: 150px; height: auto; display: block; margin-left: auto; margin-right: auto;">
-            {% endif %}
-            <div class="card-body">
-              <div class="card-product-name" hidden>{{ product.name }}</div>
-              <h6 class="card-title panel-title" style="height: 4.5em; margin-bottom: 0.5em;">{{ product.name | truncate: 40 }}</h6>
-              <div><span class="product-price">{{ product.price }}</span></div>
-              <!-- <p>{{ product.excerpt | strip_html | strip_newlines | truncate: 150 }}</p> -->
+  <div class="shuffleMe">
+    <h4 class="panel-title product-brand">{{ collection.label | upcase | replace: "_", " " }}</h4>
+    <div class="row">
+      {% for product in collection.docs %}
+      <div class="col-6 col-md-3 col-lg-2 product-item">
+        <a href="{{ product.url | prepend: site.baseurl }}" class="index-anchor">
+          <div class="card">  
+            <div class="image">
+              {% if product.image %}
+              <img class="card-img-top lazyload" data-src="{{product.image | relative_url}}" alt="{{product.name}}" loading=“lazy” style="max-width: 150px; height: auto; display: block; margin-left: auto; margin-right: auto;">
+              {% endif %}
+              <div class="card-body">
+                <div class="card-product-name" hidden>{{ product.name }}</div>
+                <h6 class="card-title panel-title" style="height: 4.5em; margin-bottom: 0.5em;">{{ product.name | truncate: 40 }}</h6>
+                <div><span class="product-price">{{ product.price }}</span></div>
+                <!-- <p>{{ product.excerpt | strip_html | strip_newlines | truncate: 150 }}</p> -->
+              </div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
+    <hr class="product-brand" />
   </div>
-  <hr class="product-brand" />
   {% endif %}
 {% endfor %}
 </div> 
