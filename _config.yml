@@ -53,6 +53,8 @@ collections:
     output: true
   centrum:
     output: true
+  ensure:
+    output: true
   go:
     output: true
   healthy_care:
