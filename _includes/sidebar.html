@@ -1,3 +1,6 @@
+{% assign today_date = 'now' | date: '%s' %}
+{% assign exp_date = page.expired_date | date: '%s' %}
+
 <div class="col-md-4 mt20">
   <div class="image">
     {% if page.image %}
@@ -12,7 +15,14 @@
 
   <div class="mt10 recent bg-light rounded">
     <ul>
-      <li><h5>Gi&aacute;: <span class="product-price">{{page.price}}</span></h5></li>
+    {% if today_date > exp_date %}
+      {% assign product_price = page.price_standard %}
+      <li><h5>Gi&aacute;: <span class="product-price">{{page.price_standard}}</span></h5></li>
+    {% else %}
+      {% assign product_price = page.price_promotion %}
+      <li><h5>Giá thường: <span class="product-price" style="color: black !important; text-decoration: line-through;">{{page.price_standard}}</span></h5></li>
+      <li><h5>Khuyến mãi: <span class="product-price">{{page.price_promotion}}</span></h5></li>
+    {% endif %}
       <li>
         <div class="form-group row">
           <label for="quantity" class="col-sm-4 col-form-label">S&#7889; l&#432;&#7907;ng: </label>
@@ -21,7 +31,7 @@
           </div>
         </div>
       <li>
-        <button type="button" class="btn btn-block btn-primary" onClick="add2cart({{page.identifier}}, '{{page.name}}', {{page.price}})">Thêm vào giỏ hàng</button>
+        <button type="button" class="btn btn-block btn-primary" onClick="add2cart({{page.identifier}}, '{{page.name}}', {{product_price}})">Thêm vào giỏ hàng</button>
       </li>
     </ul>
   </div>

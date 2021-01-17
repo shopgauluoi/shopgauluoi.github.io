@@ -43,23 +43,25 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 
-collections_dir: products
+collections_dir: products1
 collections:
   bio_island:
     output: true
   blackmores:
     output: true
-  caruso:
+  carusos:
     output: true
-  go_healthy:
+  centrum:
+    output: true
+  go:
     output: true
   healthy_care:
     output: true
-  milk:
-    output: true
+  # milk:
+  #   output: true
   natures_way:
     output: true
   wagner:
     output: true
-  others:
-    output: true
+  # others:
+  #   output: true

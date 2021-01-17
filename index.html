@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign today_date = 'now' | date: '%s' %}
 
 <div class="home py-4 py-md-5" id="home-page">
 {% for collection in site.collections %}
@@ -18,8 +19,16 @@ layout: default
               {% endif %}
               <div class="card-body">
                 <div class="card-product-name" hidden>{{ product.name }}</div>
-                <h6 class="card-title panel-title" style="height: 4.5em; margin-bottom: 0.5em;">{{ product.name | truncate: 30 }}</h6>
-                <div><span class="product-price">{{ product.price }}</span></div>
+                <h6 class="card-title panel-title" style="height: 4.5em; margin-bottom: 0.5em; color:">{{ product.name | truncate: 30 }}</h6>
+                
+                {% assign exp_date = product.expired_date | date: '%s' %}
+                {% if today_date > exp_date %}
+                  <div><span>&nbsp;</span></div>
+                  <div><span class="product-price">{{ product.price_standard }}</span></div>
+                {% else %}
+                <div><span class="product-price text-secondary" style="color: black !important; text-decoration: line-through;">{{ product.price_standard }}</span></div>
+                <div><span class="product-price">{{ product.price_promotion }}</span></div>
+                {% endif %}
                 <!-- <p>{{ product.excerpt | strip_html | strip_newlines | truncate: 150 }}</p> -->
               </div>
             </div>
